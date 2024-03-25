@@ -3,10 +3,11 @@ import java.util.*;
 public class GroceryList {
     private GroceryItemOrder[] items; // Array to store grocery items
     private int numItems; // Number of items currently in the list
+    private final int LIST_CAPACITY = 5;
 
     // Constructs a new GroceryList with no item and initializes the array
     public GroceryList() {
-        this.items = new GroceryItemOrder[5]; // Assuming a max of 5 items
+        this.items = new GroceryItemOrder[LIST_CAPACITY]; // Assuming a max of 5 items
         this.numItems = 0;
     }
 

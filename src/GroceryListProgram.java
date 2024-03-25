@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
 public class GroceryListProgram {
     public static final int BANANAS_QUANTITY_STARTING = 10;
@@ -21,8 +22,15 @@ public class GroceryListProgram {
             System.out.println(" 2. See the list of items and the total cost thereof");
             System.out.println(" 3. Quit the program");
 
-            int userChoice = console.nextInt();
-            console.nextLine();
+            int userChoice = 0;
+            try {
+                userChoice = console.nextInt();
+                console.nextLine();
+            } catch (InputMismatchException e) {
+                System.out.println("Please enter a valid number.");
+                console.next();
+                continue;
+            }
             switch (userChoice) {
                 case 1:
                     System.out.println("What would you like to add?");

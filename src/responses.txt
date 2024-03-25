@@ -16,10 +16,12 @@ Orange
 Pear
 1
 1
+1
 Grapes
 1
 1
 1
 Lettuce
+1
 1
 1
