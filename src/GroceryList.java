@@ -2,5 +2,11 @@
 
 public class GroceryList {
     // private GroceryItemOrder[] items;
+    private GroceryItemOrder[] items;
     // private int numItems;
+    private int numItems;
+
+    public GroceryList() {
+
+    }
 }
